@@ -171,7 +171,7 @@ function pickFile() {
 }
 
 /* ────────── Upload ────────── */
-async function uploadImage({ entityType, entityId, stateKey, payload }) {
+export async function uploadImage({ entityType, entityId, stateKey, payload }) {
     const endpoint = `/api/v1/filedrop`;
 
     const formData = new FormData();
